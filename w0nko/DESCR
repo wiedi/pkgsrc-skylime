@@ -1,0 +1,9 @@
+W0nko is the IRC server used for the XChannel Network.
+It adds SSL support to snircd. Snircd, developed for Quakenet, is a collection
+of modifications to the Undernet IRC server known as ircu. ircu is the
+Undernet's modified version of the original ircd.
+
+You can find more information about:
+	* XChannel at http://www.xchannel.org
+	* Quakenet at http://www.quakenet.org
+	* Undernet at http://www.undernet.org
