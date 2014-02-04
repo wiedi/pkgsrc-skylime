@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- external/re2/Makefile.orig	2014-01-16 08:49:11.000000000 +0000
++++ external/re2/Makefile
+@@ -40,6 +40,8 @@ SONAME=0
+ ifeq ($(shell uname),Darwin)
+ # Commenting out exported_symbols_list -- it doesn't work with libc++ on OS X, and we don't need the shared lib
+ MAKE_SHARED_LIBRARY=$(CXX) -dynamiclib $(LDFLAGS) #-exported_symbols_list libre2.symbols.darwin
++else ifeq ($(shell uname),SunOS)
++MAKE_SHARED_LIBRARY=$(CXX) -shared -Wl,-soname,libre2.so.$(SONAME) $(LDFLAGS)
+ else
+ MAKE_SHARED_LIBRARY=$(CXX) -shared -Wl,-soname,libre2.so.$(SONAME),--version-script=libre2.symbols $(LDFLAGS)
+ endif
