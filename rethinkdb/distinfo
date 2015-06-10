@@ -1,7 +1,0 @@
-$NetBSD$
-
-SHA1 (v1.11.3.tar.gz) = 617738e716aa026be91b4c1d330e56bd57c83cce
-RMD160 (v1.11.3.tar.gz) = cff0712784107185442fb0a21572efb0bf7fde9e
-Size (v1.11.3.tar.gz) = 6336151 bytes
-SHA1 (patch-configure) = 828ac238fae48b6aae21f10d19763079139ecc86
-SHA1 (patch-external_re2_Makefile) = 11876ac8d69dccd7fe071f4df329177971f0843f
